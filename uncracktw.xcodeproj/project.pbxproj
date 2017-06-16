@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BA2EC7C1EF357FB00741468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA2EC7B1EF357FB00741468 /* Foundation.framework */; };
+		5BA2EC871EF357FB00741468 /* uncracktw.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2EC861EF357FB00741468 /* uncracktw.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BA2EC781EF357FB00741468 /* uncracktw.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = uncracktw.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BA2EC7B1EF357FB00741468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BA2EC801EF357FB00741468 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		5BA2EC811EF357FB00741468 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		5BA2EC831EF357FB00741468 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		5BA2EC841EF357FB00741468 /* uncracktw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uncracktw-Prefix.pch"; sourceTree = "<group>"; };
+		5BA2EC851EF357FB00741468 /* uncracktw.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = uncracktw.xm; sourceTree = "<group>"; };
+		5BA2EC861EF357FB00741468 /* uncracktw.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = uncracktw.mm; sourceTree = "<group>"; };
+		5BA2EC8B1EF357FB00741468 /* uncracktw.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = uncracktw.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/uncracktw.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BA2EC741EF357FB00741468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA2EC7C1EF357FB00741468 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BA2EC6D1EF357FB00741468 = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC7D1EF357FB00741468 /* uncracktw */,
+				5BA2EC7A1EF357FB00741468 /* Frameworks */,
+				5BA2EC791EF357FB00741468 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BA2EC791EF357FB00741468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC781EF357FB00741468 /* uncracktw.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BA2EC7A1EF357FB00741468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC7B1EF357FB00741468 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BA2EC7D1EF357FB00741468 /* uncracktw */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC851EF357FB00741468 /* uncracktw.xm */,
+				5BA2EC861EF357FB00741468 /* uncracktw.mm */,
+				5BA2EC7E1EF357FB00741468 /* Package */,
+				5BA2EC821EF357FB00741468 /* Supporting Files */,
+			);
+			path = uncracktw;
+			sourceTree = "<group>";
+		};
+		5BA2EC7E1EF357FB00741468 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC7F1EF357FB00741468 /* DEBIAN */,
+				5BA2EC881EF357FB00741468 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		5BA2EC7F1EF357FB00741468 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC801EF357FB00741468 /* control.txt */,
+				5BA2EC811EF357FB00741468 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		5BA2EC821EF357FB00741468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC831EF357FB00741468 /* PackageVersion.plist */,
+				5BA2EC841EF357FB00741468 /* uncracktw-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BA2EC881EF357FB00741468 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC891EF357FB00741468 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		5BA2EC891EF357FB00741468 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC8A1EF357FB00741468 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		5BA2EC8A1EF357FB00741468 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				5BA2EC8B1EF357FB00741468 /* uncracktw.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5BA2EC751EF357FB00741468 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5BA2EC771EF357FB00741468 /* uncracktw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BA2EC8E1EF357FB00741468 /* Build configuration list for PBXNativeTarget "uncracktw" */;
+			buildPhases = (
+				5BA2EC721EF357FB00741468 /* ShellScript */,
+				5BA2EC731EF357FB00741468 /* Sources */,
+				5BA2EC741EF357FB00741468 /* Frameworks */,
+				5BA2EC751EF357FB00741468 /* Headers */,
+				5BA2EC761EF357FB00741468 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uncracktw;
+			productName = uncracktw;
+			productReference = 5BA2EC781EF357FB00741468 /* uncracktw.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BA2EC6E1EF357FB00741468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					5BA2EC771EF357FB00741468 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P68334AC4C;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5BA2EC711EF357FB00741468 /* Build configuration list for PBXProject "uncracktw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BA2EC6D1EF357FB00741468;
+			productRefGroup = 5BA2EC791EF357FB00741468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BA2EC771EF357FB00741468 /* uncracktw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BA2EC721EF357FB00741468 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		5BA2EC761EF357FB00741468 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BA2EC731EF357FB00741468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA2EC871EF357FB00741468 /* uncracktw.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5BA2EC8C1EF357FB00741468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		5BA2EC8D1EF357FB00741468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		5BA2EC8F1EF357FB00741468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = P68334AC4C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "uncracktw/uncracktw-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		5BA2EC901EF357FB00741468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = P68334AC4C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "uncracktw/uncracktw-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BA2EC711EF357FB00741468 /* Build configuration list for PBXProject "uncracktw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA2EC8C1EF357FB00741468 /* Debug */,
+				5BA2EC8D1EF357FB00741468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BA2EC8E1EF357FB00741468 /* Build configuration list for PBXNativeTarget "uncracktw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA2EC8F1EF357FB00741468 /* Debug */,
+				5BA2EC901EF357FB00741468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BA2EC6E1EF357FB00741468 /* Project object */;
+}
