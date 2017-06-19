@@ -2,38 +2,41 @@
 // Logos by Dustin Howett
 // See http://iphonedevwiki.net/index.php/Logos
 
-#error iOSOpenDev post-project creation from template requirements (remove these lines after completed) -- \
-	Link to libsubstrate.dylib: \
-	(1) go to TARGETS > Build Phases > Link Binary With Libraries and add /opt/iOSOpenDev/lib/libsubstrate.dylib \
-	(2) remove these lines from *.xm files (not *.mm files as they're automatically generated from *.xm files)
 
-%hook ClassName
 
-+ (id)sharedInstance
-{
-	%log;
+#import <UIKIt/UIKit.h>
 
-	return %orig;
-}
+%hook ViewController
 
-- (void)messageWithNoReturnAndOneArgument:(id)originalArgument
-{
-	%log;
+- (void)viewDidLoad {
 
-	%orig(originalArgument);
-	
-	// or, for exmaple, you could use a custom value instead of the original argument: %orig(customValue);
-}
+    %orig;
 
-- (id)messageWithReturnAndNoArguments
-{
-	%log;
+    // 密码
+    NSString *pw = @"";
+    // 单行输入框
+    UITextField *textField = nil;
+    // 当前控制器
+    UIViewController *vc = (UIViewController *)self;
 
-	id originalReturnOfMessage = %orig;
-	
-	// for example, you could modify the original return value before returning it: [SomeOtherClass doSomethingToThisObject:originalReturnOfMessage];
+    // 遍历查询隐藏得label
+    for (UIView *subview in vc.view.subviews) {
+        if ([subview isKindOfClass:[UILabel class]] && subview.isHidden) {
+            UILabel *label = (UILabel*)subview;
+            // 保存label内容，并将label设置为可见
+            pw = [label text];
+            [label setHidden:NO];
+        } else if ([subview isKindOfClass:[UITextField class]]) {
+            textField = (UITextField *)subview;
+        }
+    }
+    
+    // 将找到密文赋值给输入框
+    if (textField != nil) {
+        textField.text = pw;
+    }
 
-	return originalReturnOfMessage;
+
 }
 
 %end
